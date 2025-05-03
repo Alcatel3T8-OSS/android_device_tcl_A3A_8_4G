@@ -10,7 +10,6 @@
 /tctpersist           ext4     /dev/block/platform/bootdevice/by-name/tctpersist      flags=display=tctpersist
 auto                  vfat     /devices/bootdevice*                                   flags=display=auto
 auto                  auto     /devices/platform/externdevice*                        flags=display=auto
-auto                  vfat     /devices/platform/mt_usb*                              flags=display=auto
 /persistent           emmc     /dev/block/platform/bootdevice/by-name/frp             flags=display=persistent
 /nvram                emmc     /dev/block/platform/bootdevice/by-name/nvram           flags=display=nvram
 /proinfo              emmc     /dev/block/platform/bootdevice/by-name/proinfo         flags=display=proinfo
@@ -38,3 +37,4 @@ auto                  vfat     /devices/platform/mt_usb*                        
 /otp                  emmc     /dev/block/platform/bootdevice/by-name/otp             flags=display=otp
 /loader_ext1          emmc     /dev/block/platform/bootdevice/by-name/loader_ext1     flags=display=loader_ext1
 /loader_ext2          emmc     /dev/block/platform/bootdevice/by-name/loader_ext2     flags=display=loader_ext2
+/usb-otg              auto     /dev/block/sda1         /dev/block/sda                 flags=display="USB OTG";storage;wipeingui;removable
