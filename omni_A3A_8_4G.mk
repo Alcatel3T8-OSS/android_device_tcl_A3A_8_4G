@@ -14,6 +14,8 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from A3A_8_4G device
 $(call inherit-product, device/tcl/A3A_8_4G/device.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+
 PRODUCT_DEVICE := A3A_8_4G
 PRODUCT_NAME := omni_A3A_8_4G
 PRODUCT_BRAND := TCL
